@@ -10,8 +10,9 @@ function Menu(props){
                 title = {item.name}
                 subtitle = {item.description}
                 hideChevron = {true}
-                leftAvatar = {{source : require('./images/uthappizza.png')}}
-
+                onPress={() => props.onPress(item.id)}
+                avatar = {require('./images/uthappizza.png')}
+                roundAvatar
             />
         );
     }
