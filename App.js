@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Text, View, Image, TextInput, Button, Alert, ScrollView,ViewPagerAndroid } from 'react-native';
+import { StyleSheet, Text, View, Image, TextInput, Button, Alert, ScrollView,ViewPagerAndroid, Platform } from 'react-native';
 import Blink from './components/BlinkApp';
 import Main from './components/MainComponent';
 
@@ -36,7 +36,6 @@ const styles = StyleSheet.create({
         alignItems : 'stretch',
         justifyContent: 'space-around',
         flexDirection : 'column',
-        paddingTop  : 28,
-        paddingBottom : 8,
+        paddingTop: Platform.OS == 'ios' ? 30 : Expo.Constants.statusBarHeight,
     }
 });
