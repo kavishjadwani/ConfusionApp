@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import Menu from './MenuComponent';
 import Dishdetail from './DishDetailComponent';
-import {DISHES} from '../shared/dishes';
 import { View, Platform } from 'react-native';
 import Home from './HomeComponent';
 import {createStackNavigator, createDrawerNavigator} from 'react-navigation';
