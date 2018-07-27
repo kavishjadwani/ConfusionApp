@@ -3,6 +3,7 @@ import { StyleSheet, Text, View, Image, TextInput, Button, Alert, ScrollView,Vie
 import Blink from './components/BlinkApp';
 import Main from './components/MainComponent';
 
+
 export default class App extends React.Component {
 constructor(props) {
     super(props);
@@ -39,3 +40,5 @@ const styles = StyleSheet.create({
         paddingTop: Platform.OS == 'ios' ? 30 : Expo.Constants.statusBarHeight,
     }
 });
+
+
